@@ -4,14 +4,14 @@ function a() {
     let to = document.getElementById('to').value
     if (form === to) {
         if (form ==="VND")
-            document.getElementById('Result').innerHTML = 'Giá: ' + input + 'VND'
+            document.getElementById('Result').innerHTML =input
         else {
-            document.getElementById('Result').innerHTML = 'Giá: ' + input + 'USD'
+            document.getElementById('Result').innerHTML =input
         }
-    } else if (form === "VND") {
-        document.getElementById('Result').innerHTML = 'Giá: ' + input*23000 + 'VND'
+    } else if (form === "USD") {
+        document.getElementById('Result').innerHTML = input*23000
     } else {
-        document.getElementById('Result').innerHTML = 'Giá: ' + input/23000 + 'USD'
+        document.getElementById('Result').innerHTML = input/23000
 
     }
 }
